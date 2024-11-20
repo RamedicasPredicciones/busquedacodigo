@@ -133,4 +133,3 @@ elif uploaded_file:
         )
 else:
     st.info("Por favor, ingresa un CUM o sube un archivo para obtener los resultados.")
-
