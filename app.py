@@ -68,7 +68,15 @@ def to_excel(df):
     return output.getvalue()
 
 # Interfaz de Streamlit
-st.title("Homologador de Productos - CUM a Ramedicas")
+st.markdown(
+    """
+    <h1 style="text-align: center; color: orange;">RAMEDICAS S.A.S.</h1>
+    <h3 style="text-align: center;">Homologador de Productos</h3>
+    <p style="text-align: center;">
+    Esta herramienta te permite buscar y consultar los códigos de productos de manera eficiente y rápida.
+    </p>
+    """, unsafe_allow_html=True
+)
 
 # Cargar los datos de productos de Ramedicas
 ramedicas_df = load_google_sheet_data("https://docs.google.com/spreadsheets/d/1Y9SgliayP_J5Vi2SdtZmGxKWwf1iY7ma/export?format=xlsx&sheet=Hoja1")
